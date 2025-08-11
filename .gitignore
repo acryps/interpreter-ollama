@@ -2,7 +2,6 @@ node_modules
 
 # build output
 .built
-declare/.built
 
 # generated declarations
-source/declarations
+source/models.ts
