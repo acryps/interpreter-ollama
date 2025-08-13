@@ -26,7 +26,7 @@ for (let model of page.split('<span x-test-search-response-title>').slice(1)) {
 		.join('')
 		.replace(/[^0-9a-zA-Z]/g, '_');
 
-	writer.write(`class ${className}Model extends OllamaModel {\n`);
+	writer.write(`export class ${className}Model extends OllamaModel {\n`);
 	writer.write(`\tconstructor(\n`);
 
 	if (sizes.length) {
